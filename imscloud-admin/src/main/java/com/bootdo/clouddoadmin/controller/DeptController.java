@@ -15,7 +15,7 @@ import java.util.Map;
 
 /**
  * 部门管理
- * 
+ *
  * @author chglee
  * @email 1992lcg@163.com
  * @date 2017-09-27 14:40:36
@@ -25,6 +25,7 @@ import java.util.Map;
 @RequestMapping("/dept")
 public class DeptController extends BaseController {
 	private String prefix = "system/dept";
+
 	@Autowired
 	private DeptService sysDeptService;
 

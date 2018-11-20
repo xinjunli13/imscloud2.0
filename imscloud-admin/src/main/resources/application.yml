@@ -2,9 +2,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8001/eureka/
-security:
-  basic:
-    #enabled: false
 server:
   port: 8005
 spring:
@@ -17,14 +14,38 @@ spring:
   jackson:
     date-format: yyyy-MM-dd
     time-zone: GMT+8
-  cloud:
-    config:
-      discovery:
-        enabled: true
+  servlet:
+    multipart:
+      max-file-size: 10000
+      max-request-size: 10000
 mybatis:
   mapper-locations: mapper/**Mapper.xml
+  type-aliases-package: com.bootdo.clouddoadmin.domain
   configuration:
-      map-underscore-to-camel-case: true
+    map-underscore-to-camel-case: true
+#security:
+#  basic:
+#    #enabled: false
+#server:
+#  port: 8005
+#spring:
+#  application:
+#    name: api-admin
+#  datasource:
+#    url: jdbc:mysql://127.0.0.1:3306/ims2.0?useUnicode=true&characterEncoding=utf8
+#    username: root
+#    password: root
+#  jackson:
+#    date-format: yyyy-MM-dd
+#    time-zone: GMT+8
+#  cloud:
+#    config:
+#      discovery:
+#       enabled: true
+#mybatis:
+#  mapper-locations: mapper/**Mapper.xml
+#  configuration:
+#      map-underscore-to-camel-case: true
 
 
 

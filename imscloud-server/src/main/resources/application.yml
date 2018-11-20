@@ -5,10 +5,11 @@ eureka:
   instance:
     hostname: ${spring.cloud.client.ip-address}
     preferIpAddress: true
+    #hostname: localhost
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-  server:
-    enable-self-preservation: false
+  #server:
+    #enable-self-preservation: false

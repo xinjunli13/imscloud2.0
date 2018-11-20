@@ -1,5 +1,6 @@
 package com.bootdo.clouddoadmin;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -10,11 +11,12 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 
-@EnableDiscoveryClient
 @EnableFeignClients(basePackages = {"com.bootdo"})
 @EnableCaching
 @EnableScheduling
-@SpringBootApplication(scanBasePackages = {"com.bootdo.clouddoadmin", "com.bootdo.clouddocommon"})
+@EnableDiscoveryClient
+@SpringBootApplication
+@MapperScan(basePackages = {"com.bootdo.clouddoadmin.dao","com.bootdo.clouddocommon.dao"})
 public class ClouddoAdminApplication extends SpringBootServletInitializer {
 
 

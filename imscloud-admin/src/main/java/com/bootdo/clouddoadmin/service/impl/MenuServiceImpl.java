@@ -7,7 +7,7 @@ import com.bootdo.clouddoadmin.dao.RoleMenuDao;
 import com.bootdo.clouddoadmin.domain.MenuDO;
 import com.bootdo.clouddoadmin.service.MenuService;
 import com.bootdo.clouddocommon.dto.RouterDTO;
-import com.mysql.cj.util.StringUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
@@ -155,7 +155,7 @@ public class MenuServiceImpl implements MenuService {
         List<String> perms = menuMapper.listUserPerms(userId);
         Set<String> permsSet = new HashSet<>();
         for (String perm : perms) {
-            if (!StringUtils.isNullOrEmpty(perm)) {
+            if (StringUtils.isNotBlank(perm)) {
                 permsSet.addAll(Arrays.asList(perm.trim().split(",")));
             }
         }

@@ -1,7 +1,6 @@
 package com.bootdo.clouddoadmin.controller;
 
 import com.bootdo.clouddoadmin.domain.RoleDO;
-import com.bootdo.clouddoadmin.domain.UserDO;
 import com.bootdo.clouddoadmin.service.RoleService;
 import com.bootdo.clouddocommon.utils.PageUtils;
 import com.bootdo.clouddocommon.utils.Query;
