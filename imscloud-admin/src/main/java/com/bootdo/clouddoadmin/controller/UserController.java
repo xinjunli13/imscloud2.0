@@ -19,7 +19,7 @@ import java.util.Map;
 
 /**
  * 用户信息
- * @author bootdo
+ * @Author xinjl
  */
 @RequestMapping("/user")
 @RestController

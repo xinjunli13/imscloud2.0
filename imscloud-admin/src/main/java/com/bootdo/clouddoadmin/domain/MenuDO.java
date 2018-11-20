@@ -7,14 +7,14 @@ import java.util.Date;
 
 /**
  * 菜单管理
- * 
+ *
  * @author chglee
- * @email 1992lcg@163.com
+ * @email
  * @date 2018-03-09 15:30:54
  */
 public class MenuDO implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
+
 	//
 	private String component;
 	//

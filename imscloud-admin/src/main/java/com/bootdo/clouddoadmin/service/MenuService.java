@@ -17,7 +17,7 @@ public interface MenuService {
 
 	/**
 	 * 登录用户的权限
-	 * @author bootdo 1992lcg@163.com
+	 * @Author xinjl
 	 * @param userId
 	 * @return
 	 */

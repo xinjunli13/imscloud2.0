@@ -21,7 +21,7 @@ import java.util.Set;
 
 /**
  * @version V1.0
- * @Author bootdo 1992lcg@163.com
+ * @Author xinjl
  */
 public class AccessFilter extends ZuulFilter {
     @Autowired

@@ -1,7 +1,7 @@
 package com.bootdo.clouddocommon.utils;
 
 /**
- * @author bootdo
+ * @Author xinjl
  */
 public class StringUtils extends org.apache.commons.lang3.StringUtils{
 }

@@ -2,7 +2,7 @@ package com.bootdo.clouddoadmin.dto;
 
 /**
  * 用户角色
- * @author bootdo 1992lcg@163.com
+ * @Author xinjl
  */
 public class UserRoleDTO {
     public Long getId() {

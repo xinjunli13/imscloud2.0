@@ -7,14 +7,14 @@ import java.util.Date;
 
 /**
  * 文件上传
- * 
+ *
  * @author chglee
- * @email 1992lcg@163.com
+ * @email
  * @date 2018-03-12 10:18:23
  */
 public class FileDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
+
 	//
 	private Long id;
 	//文件类型

@@ -1,7 +1,7 @@
 package com.bootdo.clouddoadmin.constants;
 
 /**
- * @author bootdo 1992lcg@163.com
+ * @Author xinjl
  * @version V1.0
  */
 public class Constants {

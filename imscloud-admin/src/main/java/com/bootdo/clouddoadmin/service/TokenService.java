@@ -3,7 +3,7 @@ package com.bootdo.clouddoadmin.service;
 import org.springframework.stereotype.Service;
 
 /**
- * @author bootdo 1992lcg@163.com
+ * @Author xinjl
  */
 @Service
 public interface TokenService {

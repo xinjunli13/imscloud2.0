@@ -3,7 +3,7 @@ package com.bootdo.clouddocommon.dto;
 import java.io.Serializable;
 
 /**
- * @author bootdo 1992lcg@163.com
+ * @Author xinjl
  * @version V1.0
  */
 public class UserToken implements Serializable{
